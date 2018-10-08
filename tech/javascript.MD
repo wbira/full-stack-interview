@@ -88,6 +88,14 @@ They return a non-live NodeList, which is an array-like list of elements, array-
     <summary>
         Answer
     </summary>
+    
+The `typeof` operator is used to get the data type (returns a string) of its operand. The operand can be either a literal or a data structure such as a variable, a function, or an object. The operator returns the data type.
+
+Syntax: 
+```js
+typeof operand
+typeof (operand)
+```
 </details>
 
 ### 6. What is the difference between Local Storage and Session Storage?
