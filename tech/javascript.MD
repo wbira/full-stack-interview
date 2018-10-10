@@ -351,9 +351,11 @@ Function that will take a function as argument or return a new function. For exa
         Answer
     </summary>
 
-map - to iterate over an array and return a new one
-filter - to filter an array and return a new filtered one
-reduce - takes and reducer function which evaluate against every element and can produce every desired output (filter, map or simple value like sum)
+`map` - to iterate over an array and return a new one
+
+`filter` - to filter an array and return a new filtered one
+
+`reduce` - takes and reducer function which evaluate against every element and can produce every desired output (filter, map or simple value like sum)
 
 </details>
 
