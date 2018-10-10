@@ -227,6 +227,8 @@ modifyArray(arr, function() {
     <summary>
         Answer
     </summary>
+    
+The global `NaN` property is a value representing Not-A-Number.
 </details>
 
 ### 14. Which Test-Libraries do you use? :star:
