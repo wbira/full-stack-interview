@@ -97,6 +97,10 @@ Reducers are used to get a new state from an existing state. The new state becom
         Answer
     </summary>
 
+Because it's [second of the Three Principles of Redux](https://redux.js.org/introduction/threeprinciples#state-is-read-only). But it's not really a good answer :slightly_smiling_face:.
+
+The real answer is: read-only state makes it easier to track changes of state. Since changes happen only by applying actions to store there is no race conditions to watch out, no hidden mutations. Read-only state means that complex deep checks for changes can be replaced with simple shallow comparison, what will allow developers reduce complexity of applications.
+
 </details>
 
 ### 8. What are action creators and how they differ from actions? :star:
@@ -105,6 +109,23 @@ Reducers are used to get a new state from an existing state. The new state becom
     <summary>
         Answer
     </summary>
+
+[Action creators](https://redux.js.org/basics/actions#action-creators) are just functions that create actions. Since actions are just objects it's convenient to create them with functions such as actions creators. For example:
+
+```js
+function addTodo(text) {
+    return {
+        type: 'ADD_TODO',
+        payload: { text }
+    }
+}
+```
+
+In redux action creators do not dispatch actions - you must wrap them in `dispatch` call.
+
+```js
+dispatch(addTodo('Pass full-stack interview at Google'))
+```
 
 </details>
 
@@ -142,5 +163,17 @@ const loggingMiddleware = store => next => action => {
     <summary>
         Answer
     </summary>
+
+Because it's [third of the Three Principles of Redux](https://redux.js.org/introduction/threeprinciples#changes-are-made-with-pure-functions) :slightly_smiling_face:.
+
+The **pure** function is a function which result only depends on it's arguments and which does no side effects. For example, pure reducer should work like this:
+
+```js
+(previousState, action) => newState
+```
+
+Reducers have to be pure because pure functions are predictable. It They are easier to debug, test and refactor.
+
+Impure reducer means that application state depends not only on previous state and actions, but on something else. This breakes **Single Source Of Truth** principle and increases complexity of your app.
 
 </details>
