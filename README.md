@@ -21,7 +21,7 @@ No adds, no disturbing crap. Just learning materials.
 
 ## Server Side languages / technologies / frameworks
 
-1. [ASP.NET Core]('./tech/aspnetcore.MD') - 9 interview questions and answers
+1. [ASP.NET Core](./tech/aspnetcore.MD) - 9 interview questions and answers
 
 ## Data languages / technologies / frameworks
 
