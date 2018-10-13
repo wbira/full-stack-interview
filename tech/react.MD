@@ -84,6 +84,12 @@ Click [here](https://reactjs.org/docs/react-dom.html#render) for more info on th
     <summary>
         Answer
     </summary>
+    
+The fat arrow => is used to define anonymous functions. There are two important differences in the behavior of these functions, compared to functions defined with function.
+First, the binding for the keyword this is the same outside and inside the fat arrow function. This is different than functions declared with function, which can bind this to another object upon invocation. Maintaining the this binding is very convenient for operations like mapping: this.items.map(x => this.doSomethingWith(x)).
+Second, fat arrow functions don't have an arguments object defined. You can achieve the same thing using the spread syntax: (...args) => doSomething(args[0], args[1]).
+
+
 </details>
 
 ### 7. Why would you use `React.Children.map(props.children, () => )` instead of `props.children.map(() => )`? :star:
@@ -92,6 +98,10 @@ Click [here](https://reactjs.org/docs/react-dom.html#render) for more info on th
     <summary>
         Answer
     </summary>
+    
+Since this.props.children can have one element, multiple elements, or none at all, its value is respectively a single child node, an array of child nodes or undefined. Sometimes, we want to transform our children before rendering them — for example, to add additional props to every child. If we wanted to do that, we'd have to take the possible types of this.props.children into account. For example, if there is only one child, we can't map it.
+
+
 </details>
 
 ### 8. how events are handled in React? :star:
@@ -100,6 +110,10 @@ Click [here](https://reactjs.org/docs/react-dom.html#render) for more info on th
     <summary>
         Answer
     </summary>
+    
+React creates its own event system which is fully compatible with W3C object model. All browser’native events are wrapped by instances of Synthetic Event. It provides a cross-browser interface to a native event. That means you do not need to worry about incompatible event names and fields. Besides, React event system is implemented through event delegation and also has a pool of event objects to reduce memory overhead.
+
+
 </details>
 
 ### 9. What is JSX in React? :star:
@@ -108,6 +122,9 @@ Click [here](https://reactjs.org/docs/react-dom.html#render) for more info on th
     <summary>
         Answer
     </summary>
+    
+JSX can best be thought of as a markup syntax that very closely resembles HTML.It is more or less like the combination of Javascript + XML. JSX makes writing React components, the building blocks of React UI, easier by making the syntax developers use for generating these strings of HTML almost identical to the HTML they will inject into the web page.JSX is one of best ReactJS features. Web developers will always go for an easy way out, which is why this is a great choice for many.
+
 </details>
 
 ### 10. List some features of ReactJS? :star:
@@ -116,4 +133,10 @@ Click [here](https://reactjs.org/docs/react-dom.html#render) for more info on th
     <summary>
         Answer
     </summary>
+    
+1. Lightweight DOM For Better Performance
+2. Easy Learning Curve
+3. A desired interface can be created in a relatively easy manner.
+4. Components Support And Little Dependencies
+
 </details>
