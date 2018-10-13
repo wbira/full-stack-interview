@@ -114,17 +114,17 @@ The real answer is: read-only state makes it easier to track changes of state. S
 
 ```js
 function addTodo(text) {
-    return {
-        type: 'ADD_TODO',
-        payload: { text }
-    }
+  return {
+    type: 'ADD_TODO',
+    payload: { text }
+  };
 }
 ```
 
 In redux action creators do not dispatch actions - you must wrap them in `dispatch` call.
 
 ```js
-dispatch(addTodo('Pass full-stack interview at Google'))
+dispatch(addTodo('Pass full-stack interview at Google'));
 ```
 
 </details>
@@ -169,7 +169,7 @@ Because it's [third of the Three Principles of Redux](https://redux.js.org/intro
 The **pure** function is a function which result only depends on it's arguments and which does no side effects. For example, pure reducer should work like this:
 
 ```js
-(previousState, action) => newState
+(previousState, action) => newState;
 ```
 
 Reducers have to be pure because pure functions are predictable. It They are easier to debug, test and refactor.
