@@ -7,7 +7,7 @@ Full Stack Interview Questions & Answers
 
 ## What is this?
 
-Tech study materials for rocking your job interview or coming up with list of questions that might be worth asking your candidate for. Collection of over 40 questions and answers for sourced by community for community. Great set for high-focusing interview preparation process, with questions marked with difficulty level and answers hidden within a spoiler tag.
+Tech study materials for rocking your job interview or coming up with list of questions that might be worth asking your candidate for. Collection of **over 75 questions and answers** for sourced by community for community. Great set for high-focusing interview preparation process, with questions marked with difficulty level and answers hidden within a spoiler tag.
 
 No adds, no disturbing crap. Just learning materials.
 
@@ -20,13 +20,14 @@ No adds, no disturbing crap. Just learning materials.
 
 ## Client Side languages / technologies / frameworks
 
-1. [JavaScript](./questions/javascript.MD) - 19 interview questions and answers
+1. [JavaScript](./questions/javascript.MD) - 23 interview questions and answers
 2. [React](./questions/react.MD) - 10 interview questions and answers
 3. [Redux](./questions/redux.MD) - 10 interview questions and answers
 
 ## Server Side languages / technologies / frameworks
 
-1. [ASP.NET Core](./questions/aspnetcore.MD) - 9 interview questions and answers
+1. [C#](./questions/csharp.MD) - 29 interview questions and answers
+2. [ASP.NET Core](./questions/aspnetcore.MD) - 9 interview questions and answers
 
 ## Data languages / technologies / frameworks
 
