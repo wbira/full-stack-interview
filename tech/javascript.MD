@@ -81,7 +81,18 @@ This is the strict comparison operator e.g. `5 == '5' = true` vs `5 === '5' = fa
 
 </details>
 
-### 4. List out the different ways an HTML element can be accessed in a Javascript code. :star:
+### 4. Explain the difference between "==" and "==="? :star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+
+"==" checks only for equality in value whereas "===" is a stricter equality test and returns false if either the value or the type of the two variables are different.
+
+</details>
+
+### 5. List out the different ways an HTML element can be accessed in a Javascript code. :star:
 
 <details>
     <summary>
@@ -108,7 +119,7 @@ They return a non-live NodeList, which is an array-like list of elements, array-
 
 </details>
 
-### 5. What does a `typeof` operator do? :star:
+### 6. What does a `typeof` operator do? :star:
 
 <details>
     <summary>
@@ -126,7 +137,7 @@ typeof operand;
 
 </details>
 
-### 6. What is the difference between Local Storage and Session Storage? :star:
+### 7. What is the difference between Local Storage and Session Storage? :star:
 
 <details>
     <summary>
@@ -154,7 +165,7 @@ For more info please check
 
 </details>
 
-### 7. What is the difference between `null` and `undefined`? :star:
+### 8. What is the difference between `null` and `undefined`? :star:
 
 <details>
     <summary>
@@ -164,7 +175,7 @@ For more info please check
 `null` and `undefined` are two types in JavaScript. `undefined` means something hasn't been initialized. `null` means something is currently unavailable. 
 </details>
 
-### 8. What are anonymous functions in Javascript? :star:
+### 9. What are anonymous functions in Javascript? :star:
 
 <details>
     <summary>
@@ -190,7 +201,7 @@ setTimeout(function() {
 - [helephant.com / js-anonymous-function](http://helephant.com/2012/07/14/javascript-function-declaration-vs-expression/#function-operator-is-an-expression)
   </details>
 
-### 9. What is a function callback? :star:
+### 10. What is a function callback? :star:
 
 <details>
     <summary>
@@ -217,7 +228,7 @@ modifyArray(arr, function() {
 
 </details>
 
-### 10. What is the difference between `innerHTML` and `innerText`? :star:
+### 11. What is the difference between `innerHTML` and `innerText`? :star:
 
 <details>
     <summary>
@@ -227,7 +238,7 @@ modifyArray(arr, function() {
 `innerHTML` lets you work with HTML rich text and doesn't automatically encode and decode text. In other words, `innerText` retrieves and sets the content of the tag as plain text, whereas `innerHTML` retrieves and sets the content in HTML format.
 </details>
 
-### 11. What is the difference between HTMLCollection and NodeList? :star:
+### 12. What is the difference between HTMLCollection and NodeList? :star:
 
 <details>
     <summary>
@@ -235,7 +246,7 @@ modifyArray(arr, function() {
     </summary>
 </details>
 
-### 12. What is an Event Bubbling in Javascript? :star:
+### 13. What is an Event Bubbling in Javascript? :star:
 
 <details>
     <summary>
@@ -270,7 +281,7 @@ For more info & reference
 
 </details>
 
-### 13. What is NaN in Javascript? :star:
+### 14. What is NaN in Javascript? :star:
 
 <details>
     <summary>
@@ -280,7 +291,7 @@ For more info & reference
 The global `NaN` property is a value representing Not-A-Number.
 </details>
 
-### 14. Which Test-Libraries do you use? :star:
+### 15. Which Test-Libraries do you use? :star:
 
 <details>
     <summary>
@@ -291,7 +302,7 @@ q-unit, mocha, chai, sinonJS, jasmine, ...
 
 </details>
 
-### 15. What is Hoisting? :star:
+### 16. What is Hoisting? :star:
 
 <details>
     <summary>
@@ -304,7 +315,7 @@ Means that the declaration moved to the top of the current scope (current script
 
 </details>
 
-### 16. What means `use strict`? :star:
+### 17. What means `use strict`? :star:
 
 <details>
     <summary>
@@ -315,7 +326,7 @@ Switches to strict mode which helps to prevent common errors like using unsafe o
 
 </details>
 
-### 17. What is `bind()` and when we use it? :star::star:
+### 18. What is `bind()` and when we use it? :star::star:
 
 <details>
     <summary>
@@ -332,7 +343,7 @@ it creates a new function which prevents accidental loss of scope. An alternativ
 
 </details>
 
-### 18. Explain higher order function? :star::star:
+### 19. Explain higher order function? :star::star:
 
 <details>
     <summary>
@@ -343,7 +354,7 @@ Function that will take a function as argument or return a new function. For exa
 
 </details>
 
-### 19. Explain `map`, `filter`, `reduce` and when to use it? :star:
+### 20. Explain `map`, `filter`, `reduce` and when to use it? :star:
 
 <details>
     <summary>
@@ -358,7 +369,7 @@ Function that will take a function as argument or return a new function. For exa
 
 </details>
 
-### 20. When to use event delegation? :star::star:
+### 21. When to use event delegation? :star::star:
 
 <details>
     <summary>
@@ -368,3 +379,31 @@ Function that will take a function as argument or return a new function. For exa
 If you have to watch a lot of elements and performance is key
 
 </details>
+
+### 22. What is the difference between ViewState and SessionState? :star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+
+`ViewState` is specific to a page in a session.
+
+`SessionState` is specific to user specific data that can be accessed across all pages in the web application.
+
+</details>
+
+### 23. Does JavaScript support automatic type conversion?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+
+Yes! JavaScript does support automatic type conversion.
+
+</details>
+
+
+
+
