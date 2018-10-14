@@ -14,7 +14,7 @@ _Note: Keep in mind that many of these questions are open-ended and could lead t
         Answer
     </summary>
 
-The state of your whole application is stored in an object tree within a single store. That is, there are not multiple stores keeping chunks of the entire state of the web application. Having a single a single store also helps in debugging the app.
+The state of your whole application is stored in an object tree within a single store. That is, there are not multiple stores keeping chunks of the entire state of the web application. Having a single store also helps in debugging the app.
 
 </details>
 
@@ -25,7 +25,7 @@ The state of your whole application is stored in an object tree within a single 
         Answer
     </summary>
 
-Actions are plain JavaScript object that describes what happened. They can be thought of as the "intent" to do something. Here are a few example actions:
+Actions are plain JavaScript objects that describe potential changes to the state. They can be thought of as the "intent" to do something. Here are a few example actions:
 
 ```js
 { type: 'ADD_TODO', text: 'Go to swimming pool' }
@@ -42,7 +42,7 @@ Actions are plain JavaScript object that describes what happened. They can be th
         Answer
     </summary>
 
-Yes. Libraries like `redux-thunk` allows developers to use functions as actions.
+Yes. Libraries like `redux-thunk` allow developers to use functions as actions.
 
 See [redux-thunk](https://github.com/reduxjs/redux-thunk)
 
@@ -55,7 +55,7 @@ See [redux-thunk](https://github.com/reduxjs/redux-thunk)
         Answer
     </summary>
 
-Reducers are just pure functions that take the previous state and an action, and return the next state. Example:
+Reducers are pure functions that take the previous state and an action, and return and object that represents the next state. Example:
 
 ```js
 function handleAuth(state, action) {
@@ -128,9 +128,9 @@ See [redux-vs-flux](https://www.educba.com/redux-vs-flux/)
         Answer
     </summary>
 
-Because it's [second of the Three Principles of Redux](https://redux.js.org/introduction/threeprinciples#state-is-read-only). But it's not really a good answer :slightly_smiling_face:.
+Because it's [second of the Three Principles of Redux](https://redux.js.org/introduction/threeprinciples#state-is-read-only). But that's not really a good answer :slightly_smiling_face:.
 
-The real answer is: read-only state makes it easier to track changes of state. Since changes happen only by applying actions to store there is no race conditions to watch out, no hidden mutations. Read-only state means that complex deep checks for changes can be replaced with simple shallow comparison, what will allow developers reduce complexity of applications.
+The real answer is: read-only state makes it easier to track changes of state. Since changes happen only by applying actions to the store there are no race conditions to watch out for - no hidden mutations. Read-only state means that complex deep checks for changes can be replaced with simple shallow comparison, what will allow developers to reduce the complexity of applications.
 
 </details>
 
@@ -141,7 +141,7 @@ The real answer is: read-only state makes it easier to track changes of state. S
         Answer
     </summary>
 
-[Action creators](https://redux.js.org/basics/actions#action-creators) are just functions that create actions. Since actions are just objects it's convenient to create them with functions such as actions creators. For example:
+[Action creators](https://redux.js.org/basics/actions#action-creators) are functions that create actions. Since actions are just objects it's convenient to write functions that create them. For example:
 
 ```js
 function addTodo(text) {
@@ -152,7 +152,7 @@ function addTodo(text) {
 }
 ```
 
-In redux action creators do not dispatch actions - you must wrap them in `dispatch` call.
+In redux action creators do not dispatch actions - you must wrap them in `dispatch` calls.
 
 ```js
 dispatch(addTodo('Pass full-stack interview at Google'));
@@ -188,7 +188,7 @@ const loggingMiddleware = store => next => action => {
 
 </details>
 
-### 10. Why reducers functions have to be pure? :star:
+### 10. Why do reducer functions have to be pure? :star:
 
 <details>
     <summary>
@@ -197,14 +197,14 @@ const loggingMiddleware = store => next => action => {
 
 Because it's [third of the Three Principles of Redux](https://redux.js.org/introduction/threeprinciples#changes-are-made-with-pure-functions) :slightly_smiling_face:.
 
-The **pure** function is a function which result only depends on it's arguments and which does no side effects. For example, pure reducer should work like this:
+A **pure** function is a function whose result only depends on it's arguments and which has no side effects. For example, pure reducer should work like this:
 
 ```js
 (previousState, action) => newState;
 ```
 
-Reducers have to be pure because pure functions are predictable. It They are easier to debug, test and refactor.
+Reducers have to be pure because pure functions are predictable making them easier to debug, test and refactor.
 
-Impure reducer means that application state depends not only on previous state and actions, but on something else. This breakes **Single Source Of Truth** principle and increases complexity of your app.
+Having impure reducers would mean that application state depends not only on previous state and actions, but on something else. This breakes the **Single Source Of Truth** principle and increases the complexity of your app.
 
 </details>
