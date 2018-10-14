@@ -13,15 +13,20 @@ No adds, no disturbing crap. Just learning materials.
 
 # Tech topics
 
+## Design and architecture
+
+1. [Design principles](./questions/design-principles.MD) - 12 interview questions and answers
+2. [Design patterns](./questions/design-patterns.MD) - 29 interview questions and answers
+
 ## Client Side languages / technologies / frameworks
 
-1. [JavaScript](./tech/javascript.MD) - 19 interview questions and answers
-2. [React](./tech/react.MD) - 10 interview questions and answers
-3. [Redux](./tech/redux.MD) - 10 interview questions and answers
+1. [JavaScript](./questions/javascript.MD) - 19 interview questions and answers
+2. [React](./questions/react.MD) - 10 interview questions and answers
+3. [Redux](./questions/redux.MD) - 10 interview questions and answers
 
 ## Server Side languages / technologies / frameworks
 
-1. [ASP.NET Core](./tech/aspnetcore.MD) - 9 interview questions and answers
+1. [ASP.NET Core](./questions/aspnetcore.MD) - 9 interview questions and answers
 
 ## Data languages / technologies / frameworks
 
