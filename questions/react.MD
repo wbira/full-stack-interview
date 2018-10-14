@@ -140,3 +140,43 @@ JSX can best be thought of as a markup syntax that very closely resembles HTML.I
 4. Components Support And Little Dependencies
 
 </details>
+
+### 11. What are refs and keys used for in React? :star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+The ref is used to return a reference to your element. Refs can be useful when you need DOM measurements or to add methods to your components.
+
+React keys are useful when working with dynamically created components or when your rendered lists are altered by users. Setting the key value will keep your components uniquely identified by the React after the change.
+
+</details>
+
+### 12. What are Higher Order Components(HOC)? :star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+Higher Order Component is an advanced way of reusing the component logic. Basically, it’s a pattern derived from React’s compositional nature.
+
+HOC are custom components which wrap another component within it. They can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components. We can say that HOC are ‘pure’ components.
+
+</details>
+
+### 13. What are HOCs used for?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+HOCs are used for many tasks, some being:
+* Code reuse, logic and bootstrap abstraction
+* State abstraction and manipulation
+* Props manipulation
+
+</details>
