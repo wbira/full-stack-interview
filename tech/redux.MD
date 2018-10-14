@@ -88,6 +88,37 @@ Reducers are used to get a new state from an existing state. The new state becom
         Answer
     </summary>
 
+**MVC vs Redux**
+
+- One of the main differences between MVC and Redux is that, while in MVC data can flow in a bidirectional manner, in Redux it strictly moves in one direction.
+- In MVC, when applications became more complex, the Controller begins to feel the burden.
+The Controller takes the huge responsibility of maintaining both the application state and the data. Also, the cascading updates makes the app really difficult to understand and debug. In the end, you have an application whose results are totally unpredictable.In Redux, this problem is mitigated, and eventually, predictable application state is achieved. When the data flow is unidirectional, changes in the application view layer will trigger an action in the data layer. These changes will then be reflected in the View. The View does not directly affect application data.
+- It is often mentioned that an MVC based application has issues with scaling.
+While an architecture may be partly responsible for scaling related limitations, it is not the only factor. There are many web applications that are developed using the MVC architecture and are proven to be scalable to meet customer demands.
+Having said that, information is the most challenging aspect of a software when it comes to scaling. Redux tackles information scaling well, as it puts information first and foremost, above everything else.
+
+See [redux-vs-mvc](https://blog.gisspan.com/2017/02/Redux-Vs-MVC,-Why-and-How.html)
+
+**Flux vs Redux**
+
+**Flux:** 
+- Store contain state and change logic
+- Multile stores
+- Flat disconnected stores
+- Singleton dispatcher
+- React Component subscibe to stores
+- State is mutated
+
+**Redux:**
+- Store and change logic are seperate
+- Single store
+- Single store with hierarchical reducers
+- No dispatcher
+- Container components utilize connect
+- State is immutable
+
+See [redux-vs-flux](https://www.educba.com/redux-vs-flux/)
+
 </details>
 
 ### 7. Why the state is read-only? :star:
