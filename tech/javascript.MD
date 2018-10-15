@@ -419,7 +419,7 @@ An IIFE (Immediately Invoked Function Expression) is a JavaScript function that 
     var name = "John Doe";
 })();
 // Variable name is not accessible from the outside scope
-name // throws "Uncaught ReferenceError: aName is not defined"
+name // throws "Uncaught ReferenceError: name is not defined"
 
 //common use
 var result = (function () { 
