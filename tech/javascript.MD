@@ -404,6 +404,38 @@ Yes! JavaScript does support automatic type conversion.
 
 </details>
 
+### 24. What are IIFE in javascript?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It is a design pattern which is also known as a Self-Executing Anonymous Function.
+
+```js
+//example
+(function () { 
+    var name = "John Doe";
+})();
+// Variable name is not accessible from the outside scope
+name // throws "Uncaught ReferenceError: aName is not defined"
+
+//common use
+var result = (function () { 
+    var name = "John Doe"; 
+    return name; 
+})(); 
+// Immediately creates the output: 
+result; // "John Doe"
+```
+
+Assigning the IIFE to a variable stores the function's result, not the function itself.
+
+This pattern is often used when trying to avoid polluting the global namespace, because all the variables used inside the IIFE (like in any other normal function) are not visible outside its scope.
+
+</details>
+
 
 
 
