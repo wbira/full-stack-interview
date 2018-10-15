@@ -273,7 +273,7 @@ Proxy is about creating a substitute class that has the same interface as an ori
     <summary>
         Answer
     </summary>
-
+State is a behavorial pattern that allows it's behavior to be changed depending on what "state" it is in.
 </details>
 
 ### 27. What is _Strategy_ pattern?
