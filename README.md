@@ -20,7 +20,7 @@ No adds, no disturbing crap. Just learning materials.
 
 ## Client Side languages / technologies / frameworks
 
-1. [JavaScript](./questions/javascript.MD) - 23 interview questions and answers
+1. [JavaScript](./questions/javascript.MD) - 24 interview questions and answers
 2. [React](./questions/react.MD) - 13 interview questions and answers
 3. [Redux](./questions/redux.MD) - 10 interview questions and answers
 
