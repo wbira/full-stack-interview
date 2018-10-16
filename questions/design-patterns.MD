@@ -95,7 +95,9 @@ Interface method for creating an object but letting subclasses decide on what cl
     <summary>
         Answer
     </summary>
-
+Special kind of factory, which main purpose is reusing/sharing objects, that creations is hard (e.g time consuming).
+Client of object poll requests object, do some operation on it. After it finish it returns object to pool instead of destroy it.
+Good example of implementation Object Pool pattern is  <a href"https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadpool?view=netframework-4.7.2">Thread pool from .NET Framework.</a>
 </details>
 
 ### 9. What is _Prototype_ pattern?
